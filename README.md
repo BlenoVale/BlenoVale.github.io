@@ -1,1 +1,1 @@
-# BlenoVale.github.io
+#https://BlenoVale.github.io/Pokemon/
