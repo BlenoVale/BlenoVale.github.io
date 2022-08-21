@@ -1,0 +1,629 @@
+* {
+    font-family: arial;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    /*permite o conteúdo dentro da tag fique flexivel*/
+    justify-content: center;
+    /*coloca o container no centro*/
+    height: 120px;
+    background-color: #79CAF9;
+}
+
+.container {
+    display: flex;
+    /*permite o conteúdo dentro da tag fique flexivel*/
+    width: 990px;
+    justify-content: space-between;
+    /*separa o conteudo em lados opostos*/
+}
+
+.container .logo img {
+    max-height: 90px;
+    margin: 10px;
+}
+
+.menu {
+    display: flex;
+    /*permite o conteúdo dentro da tag fique flexivel*/
+    align-items: center;
+    /*coloca itens no centro*/
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    /*retira qualquer estilo padrão da lista*/
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul {
+    display: flex;
+    /*permite o conteúdo dentro da tag fique flexivel*/
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3D5FB4;
+
+}
+
+/*ára mudar a cor do background do botão home*/
+nav a:hover {
+    /*para mudar a cor das outras opções quando passar o mouse*/
+    background-color: #FAC705;
+
+}
+
+#banner {
+    display: flex;
+    /*permite o conteúdo dentro da tag fique flexivel*/
+    justify-content: center;
+    /*coloca itens no centro*/
+    background-image: url(../images/pokemonbanner.jpg);
+    /* os '../' é para sair da pasta css e entrar em images*/
+    background-position: center;
+    /*coloca a imagem no centro do container*/
+    background-size: contain;
+    /*deixa a imagem inteira visível*/
+    height: 600px;
+}
+
+.column {
+    flex-direction: column;
+    /*alinha o conteúdo da página em coluna*/
+
+}
+
+.container_banner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 250px;
+    padding: 0;
+}
+
+.container_banner h1 {
+    color: #3D5FB4;
+    font-size: 60px;
+    text-shadow: 1px 1px #555555;
+    margin: 0;
+    padding: 0;
+}
+
+.container_banner h2 {
+    color: #555555;
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+/*Seção História*/
+
+#history {
+    display: flex;
+    justify-content: center;
+}
+
+.content_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 990px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.title_section .title_text {
+    text-align: center;
+    color: #3D5FB4;
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.title_section .title_bar,
+.body_section .final_bar {
+    height: 2px;
+    background-color: #3D5FB4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.history_image {
+    display: flex;
+    justify-content: center;
+}
+
+.rgb_image {
+    width: 500px;
+    height: auto;
+}
+
+.history_desc {
+    font-size: 20px;
+    text-align: center;
+}
+
+.fonte_desc {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Seção Gerações*/
+
+#generations{
+    display: flex;
+    justify-content: center;
+    background-color: #C24940;
+}
+
+.gen_title_section {
+    display: flex;
+    justify-content: center;
+}
+
+.gen_title_section .trainersprite {
+    width: auto;
+    height: 70px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.gen_title_section .title_text {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 31px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+
+.list_gens {
+    display: flex;
+    justify-content: center;
+}
+
+
+.list_gens ul {
+    display: flex;
+}
+
+.list_gens ul,
+.list_gens li {
+    list-style: none;
+}
+
+.list_gens a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFF;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.list_gens img {
+    width: auto;
+    height: 70px;
+}
+
+.list_gens a:hover {
+    background-color: #FAC705;
+    color: #241A18;
+
+}
+
+.gen_section {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.gen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+
+.img_gens {
+    flex:2;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.gen_img{
+    height: 142px;
+}
+
+.gen_img-switch {
+    height: 250px;
+}
+
+.gen_desc {
+    flex: 1;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 23px;
+    margin-left: 10px;
+}
+
+.gen_desc h3 {
+    margin-bottom: 5px;
+}
+
+#legends {
+    display: flex;
+    justify-content: center;
+    background-color: #4390A1;
+}
+
+.lg_title_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    margin: 5px;
+    background-color: #241A18;
+    border-radius: 50px;
+}
+
+.circle1 {
+    width: 10px;
+    height: 10px;
+}
+
+.circle2 {
+    width: 20px;
+    height: 20px; 
+}
+
+.circle3 {
+    width: 30px;
+    height: 30px; 
+}
+
+.lg_title_section .title_text {
+    text-align: center;
+    color: #241A18;
+    font-size: 31px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.legends_img {
+    display: flex;
+    justify-content: center;
+}
+
+.lg_img {
+    width: auto;
+    height: 477px;
+}
+
+.legends_img figure {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+figcaption {
+    background-color: #ccc;
+    padding: 2x;
+    text-align: center;
+    font-weight: bold;
+}
+
+.legends_desc {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#anime {
+    display: flex;
+    justify-content: center;
+    background-color: #DDA929;
+}
+
+.anime_title .title_text {
+    text-align: center;
+    color: #241A18;
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-area {
+    position: relative;
+    height: 0px;
+    background-color: #CCC;
+    padding: 0px 0px 56.25%; /*chegar ao último parâmetro = (height/width)*2 */
+}
+
+.video-area iframe {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+.anime_desc {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_copy {
+    flex:1;
+    border-top: 1px solid #2c2c2c;
+    height: 50px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+} 
+
+.mm_line {
+    height: 4px;
+    background-color: #3D5FB4;
+}
+
+.bloat-button {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border-radius: 20px;
+    background-color: #3D5FB4;
+    width: 90px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloat-button a {
+    flex: 1;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+}
+
+@media (max-width: 1175px) {
+    #banner {
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 990px) {
+    .container_banner h1{
+        font-size: 50px;
+    }
+
+    .container {
+        width: 660px;
+    }
+
+    .container_banner h2 {
+        font-size: 17px;
+    }
+
+    .rgb_image {
+        width: 300px;
+        height: auto;
+    }
+
+    /**/
+
+    .list_gens {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .list_gens  ul{
+        flex: 1;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .gen {
+        flex-direction: column;
+    
+    }
+    
+    .img_gens {
+        flex: 2;
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+    
+    .gen_img{
+        height: 142px;
+    }
+    
+    .gen_img-switch {
+        height: 250px;
+    }
+
+    .gen_desc ul,
+    .gen1_desc li {
+        list-style: none;
+    }
+
+
+    .gen_desc {
+        flex: 1.2;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px;
+        line-height: 23px;
+    }
+
+    .lg_img {
+        width: 300px;
+        height: auto;
+        margin: 8px;
+    }
+    
+    figcaption {
+        font-size: 13px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .container_banner h1{
+        font-size: 40px;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+    .container_banner h2 {
+        font-size: 17px;
+    }
+
+    .rgb_image {
+        width: 300px;
+        height: auto;
+    }
+
+    .gen1_section {
+        flex-direction: column;
+    }
+
+    .gen1_img {
+        width: 300px;
+        height: auto;
+        margin: 8px;
+    }
+
+    .gen2_section {
+        flex-direction: column;
+    }
+
+    .gen2_img {
+        width: 300px;
+        height: auto;
+        margin: 8px;
+    }
+    
+    .gen1_desc h3 {
+        margin: 0;
+    }
+    
+    .gen1_desc {
+        flex: 1;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px;
+        line-height: 23px;
+    }
+
+    .gen2_desc h3 {
+        margin: 0;
+    }
+    
+    .gen2_desc {
+        flex: 1;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px;
+        line-height: 23px;
+    }
+
+    .lg_img {
+        width: 300px;
+        height: auto;
+        margin: 8px;
+    }
+    
+    figcaption {
+        font-size: 13px;
+    }
+
+    .video {
+        display: none;
+    }
+    
+    .footer_copy {
+        font-size: 10px;
+        height: auto;
+    }
+}

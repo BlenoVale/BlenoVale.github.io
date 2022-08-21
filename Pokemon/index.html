@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTB-*" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/template.css" />
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex'
+                }
+            });
+        };
+    </script>
+
+    <title>Pokemon fã</title>
+</head>
+
+<body>
+    <header id="home">
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="assets/images/pokemonlogo.png" /></a>
+            </div>
+            <div class="menu">
+                <nav>
+
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+
+                    <ul>
+                        <li><a href="#history">História</a></li>
+                        <li><a href="#generations">Gerações</a></li>
+                        <li><a href="#legends">Legends</a></li>
+                        <li><a href="#anime">Anime</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container column">
+            <div class="container_banner">
+                <h1>Temos que pegar!</h1>
+                <h2>Desde 1995 divertindo crianças e adultos.</h2>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="history">
+            <div class="container">
+                <div class="content_section">
+                    <div class="title_section">
+                        <div class="title_text">A História de Pokémon</div>
+                        <div class="title_bar"></div>
+                    </div>
+
+                    <div class="body_section">
+                        <article>
+                            <div class="history_image">
+                                <img class="rgb_image" src="assets/images/rbg.webp" />
+                            </div>
+
+                            <div class="history_desc">
+                                <strong>Pokémon</strong> (ポケモン Pokemon) é uma franquia de mídia que pertence a The
+                                Pokémon
+                                Company,
+                                tendo sido criada por Satoshi Tajiri em 1995. Ela é centrada em criaturas ficcionais
+                                chamadas "Pokémon", que os seres humanos capturam e os treinam para lutarem entre si com
+                                seus ataques de diversos tipos.
+                                <br /><br />
+                                A franquia começou com um par de jogos lançados para o Game Boy original, desenvolvidos
+                                pela
+                                Game Freak e publicados pela Nintendo. Atualmente, a franquia se estende em jogos,
+                                cartas
+                                colecionáveis, série de televisão, além de filmes, mangás e brinquedos. Pokémon é a
+                                segunda
+                                franquia de mídia de jogos mais bem sucedida e lucrativa do mundo, atrás da franquia de
+                                Mario que também pertence a Nintendo.
+                            </div>
+
+                            <div class="fonte_desc">
+                                <b>Fonte:</b><a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon"
+                                    target="_blank">Wikipedia</a>
+                            </div>
+
+                            <div class="final_bar"></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="generations">
+            <div class="container">
+                <div class="content_section">
+                    <div class="gen_title_section">
+                        <img class="trainersprite" src="assets/images/trainer.png" />
+                        <div class="title_text">Gerações de Pokémon</div>
+                    </div>
+
+                    <div class="list_gens">
+                        <ul>
+                            <li>
+                                <a href="#gen1">
+                                    <img class="mewtwo_sprite" src="assets/images/mewtwo_sprite.png" />
+                                    Gen 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gen2">
+                                    <img class="lugia_sprite" src="assets/images/lugia_sprite.webp" />
+                                    Gen 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gen3">
+                                    <img class="rayquaza_sprite" src="assets/images/rayquaza_sprite.png" />
+                                    Gen 3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gen4">
+                                    <img class="rayquaza_sprite" src="assets/images/giratina-sprite.png" />
+                                    Gen 4
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gen5">
+                                    <img class="rayquaza_sprite" src="assets/images/reshiram-sprite.png" />
+                                    Gen 5
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gen6">
+                                    <img class="rayquaza_sprite" src="assets/images/zygarde-sprite.png" />
+                                    Gen 6
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gen7">
+                                    <img class="rayquaza_sprite" src="assets/images/solgaleo-sprite.png" />
+                                    Gen 7
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gen8">
+                                    <img class="rayquaza_sprite" src="assets/images/zamazenta-sprite.png" />
+                                    Gen 8
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#gen9">
+                                    <img class="rayquaza_sprite" src="assets/images/koraidon-sprite.webp" />
+                                    Gen 9
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="gens_Section">
+                        <div id="gen1" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img" src="assets/images/rb_gen1.jpg" />
+                                <img class="gen_img" src="assets/images/yellow_gen1.jpg" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 1</h3>
+                                    <li>Pokémon Red e Pokémon Blue (1996)</li>
+                                    <li>Pokémon Yellow (1998)</li>
+                                    <li>Região: Kanto</li>
+                                    <li>Quantidade de Pokémon: 150</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="gen2" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img" src="assets/images/gold-silver-kristal_gen2.webp" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 2</h3>
+                                    <li>Pokémon Gold e Pokémon Silver (1999)</li>
+                                    <li>Pokémon Cristal (2000)</li>
+                                    <li>Região: Johto</li>
+                                    <li>Quantidade de Pokémon: 251</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="gen3" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img" src="assets/images/ruby-emerald-saphire_gen3.jpg" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 3</h3>
+                                    <li>Pokémon Ruby e Pokémon Emerald (2002)</li>
+                                    <li>Pokémon Saphire (2004)</li>
+                                    <li>Região: Hoenn</li>
+                                    <li>Quantidade de Pokémon: 386</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="gen4" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img" src="assets/images/diamond-pearl-platinum_gen4.png" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 4</h3>
+                                    <li>Pokémon Diamond e Pokémon Pearl (2006)</li>
+                                    <li>Pokémon Platinum (2008)</li>
+                                    <li>Região: Sinnoh</li>
+                                    <li>Quantidade de Pokémon: 493</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="gen5" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img" src="assets/images/black-white-gen5.png" />
+                                <img class="gen_img" src="assets/images/black2-white2.jpg" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 5</h3>
+                                    <li>Pokémon Black e Pokémon White (2010)</li>
+                                    <li>Pokémon Black2 e Pokémon White2 (2012)</li>
+                                    <li>Região: Unova</li>
+                                    <li>Quantidade de Pokémon: 649</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="gen6" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img" src="assets/images/XY_gen6.jpg" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 6</h3>
+                                    <li>Pokémon X e Pokémon Y (2013)</li>
+                                    <li>Região: Kalos</li>
+                                    <li>Quantidade de Pokémon: 721</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="gen7" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img" src="assets/images/sun-moon_gen7.webp" />
+                                <img class="gen_img" src="assets/images/ultra-sun-ultra-moon_gen7.jpg" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 7</h3>
+                                    <li>Pokémon Sun e Pokémon Moon (2016)</li>
+                                    <li>Pokémon Ultra Sun e Pokémon Ultra Moon (2017)</li>
+                                    <li>Região: Alola</li>
+                                    <li>Quantidade de Pokémon: 809</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="gen8" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img-switch" src="assets/images/sword-shield_gen8.png" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 8</h3>
+                                    <li>Pokémon Sword e Pokémon Shield (2019)</li>
+                                    <li>Região: Galar</li>
+                                    <li>Quantidade de Pokémon: 898</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="gen9" class="gen">
+                            <div class="img_gens">
+                                <img class="gen_img-switch" src="assets/images/scarlet-violet_gen9.webp" />
+                            </div>
+
+                            <div class="gen_desc">
+                                <ul>
+                                    <h3>GEN 9</h3>
+                                    <li>Pokémon Scarlet e Pokémon Violet (2022)</li>
+                                    <li>Região: Paldean</li>
+                                    <li>Quantidade de Pokémon: ?</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <section id="legends">
+            <div class="container">
+                <div class="content_section">
+                    <div class="lg_title_section">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="title_text">Legends Arceus</div>
+                        <div class="circle3"></div>
+                        <div class="circle2"></div>
+                        <div class="circle1"></div>
+                    </div>
+
+                    <article>
+                        <div class="legends_img">
+                            <figure>
+                                <img class="lg_img" src="assets/images/legends.jpg" />
+                                <figcaption>Imagem de apresentação de Legend Arceus.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="legends_desc">
+                            <strong>Pokémon Legends: Arceus</strong> (Pokémon LEGENDS アルセウス Pokemon Rejenzu: Aruseusu) é
+                            um
+                            jogo eletrônico
+                            de RPG de ação desenvolvido pela Game Freak e publicado pela The Pokémon Company e Nintendo.
+                            Faz
+                            parte da oitava geração da série de jogos eletrônicos Pokémon e serve como uma prequela para
+                            os
+                            jogos eletrônicos de RPG do Nintendo DS, Pokémon Diamond e Pearl, de 2006. Foi lançado
+                            mundialmente em 28 de janeiro de 2022 para Nintendo Switch. O jogo foi anunciado como parte
+                            do
+                            evento Pokémon 25th Anniversary juntamente com Pokémon Brilliant Diamond e Shining Pearl.
+                        </div>
+
+                        <div class="fonte_desc">
+                            <b>Fonte:</b><a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_Legends:_Arceus"
+                                target="_blank">Wikipedia</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="anime">
+            <div class="container">
+                <div class="content_section">
+                    <div class="anime_title">
+                        <div class="title_text">Anime</div>
+                    </div>
+
+                    <div class="video">
+                        <div class="video_area">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-PlAg8R9TG4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="anime_desc">
+                        Pokémon (ポケモン Pokemon?), abreviação do título japonês Pocket Monsters (ポケットモンスター Poketto
+                        Monsutā,
+                        lit. "Monstros de Bolso"), e atualmente anunciado em inglês como Pokémon: The Series, é uma
+                        série de
+                        anime kodomomuke da franquia Pokémon.
+                        <br /><br />
+                        <strong>A série animada Pokémon</strong> é dividida em sete séries cronologicamente sequenciais
+                        no
+                        Japão, divididas
+                        pela versão da série de videogames da qual o anime se inspira: a série original (Ouro e Prata),
+                        a
+                        série Rubi & Safira, a série Diamante & Pérola, a série Preto & Branco, a série XY, a série Sol
+                        &
+                        Lua e a série Jornadas. Nas transmissões internacionais, essas sete séries são divididas em 24
+                        temporadas separadas.Pokémon (ポケモン Pokemon?), abreviação do título japonês Pocket Monsters
+                        (ポケットモンスター Poketto Monsutā?, lit. "Monstros de Bolso"), e atualmente anunciado em inglês como
+                        Pokémon: The Series, é uma série de anime kodomomuke da franquia Pokémon.
+                        <br /><br />
+                        A série animada Pokémon é dividida em sete séries cronologicamente sequenciais no Japão,
+                        divididas
+                        pela versão da série de videogames da qual o anime se inspira: a série original (Ouro e Prata),
+                        a
+                        série Rubi & Safira, a série Diamante & Pérola, a série Preto & Branco, a série XY, a série Sol
+                        &
+                        Lua e a série Jornadas. Nas transmissões internacionais, essas sete séries são divididas em 24
+                        temporadas separadas.
+                    </div>
+                    <div class="fonte_desc">
+                        <b>Fonte:</b><a href="https://pt.wikipedia.org/wiki/Pok%C3%A9mon_(anime)"
+                            target="_blank">Wikipedia</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="bloat-button">
+            <a href="#home">HOME</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_copy">
+                ©Copyright - Fan Page Pokémon - by Bleno Vale - Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
