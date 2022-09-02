@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header .menu {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .menu-line {
+    height: 3px;
+    background-color: #fefdf9;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container .left-side {
+    flex: 1;
+    background-color: #fefdf9;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.container .right-side {
+    flex: 1;
+    background-color: #b18936;
+    background-image: url('../images/sheldon01.png');
+    background-size: cover;
+    background-position: center top;
+}
+
+.container .right-side .mobile-img {
+    display: none;
+}
+
+.container .info {
+    color: #000;
+}
+
+.container .info .profession {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #b18936;
+}
+
+.container .info .name {
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .info .buttons a {
+    display: inline-block;
+    background-color: #b18936;
+    border: 3px solid #b18936;
+    color: #FFF;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgb(224, 224, 224);
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.container .info .buttons a.light {
+    display: inline-block;
+    background-color: #FFF;
+    border: 3px solid #FFF;
+    color: #000;
+}
+
+.container .info .buttons a:hover {
+    opacity: 0.8;
+    border: 3px solid #b18936;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+footer a {
+    color: #b18936;
+}
+
+@media (min-width: 660px) and (max-width: 850px) {
+    header {
+        position: initial;
+        background-color: #fefdf9;
+    }
+
+    header .menu-line {
+        background-color: #000;
+    }
+
+    .container .info .name {
+        font-size: 50px;
+    }
+
+    .container .info .buttons a {
+        padding: 12px 22px;
+        font-size: 14px;
+        margin-right: 8px;
+    }
+
+    footer {
+        position: initial;
+        text-align: center;
+    }
+}
+
+@media (min-width: 328px) and (max-width: 659px) {
+    header {
+        position: initial;
+        background-color: #fefdf9;
+    }
+
+    header .menu-line {
+        background-color: #000;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .left-side {
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container .info .profession {
+        font-size: 16px;
+    }
+
+    .container .info .name {
+        font-size: 40px;
+    }
+
+    .container .info .buttons a {
+        padding: 10px 20px;
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+    footer {
+        position: initial;
+        text-align: center;
+        font-size: 15px;
+        background-color: #333;
+        color: #FFF;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 327px) {
+    header {
+        position: initial;
+        background-color: #fefdf9;
+    }
+
+    header .menu-line {
+        background-color: #000;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .left-side {
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container .info .profession {
+        font-size: 16px;
+    }
+
+    .container .info .name {
+        font-size: 40px;
+    }
+
+    .container .info .buttons a,
+    .container .info .buttons a.light {
+        display: block;
+        padding: 10px 20px;
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    footer {
+        position: initial;
+        text-align: center;
+        font-size: 15px;
+        background-color: #333;
+        color: #FFF;
+        padding: 12px 20px;
+    }
+
+}
