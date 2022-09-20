@@ -11,3 +11,7 @@
 #https://BlenoVale.github.io/STARBUCKS/
 
 #https://BlenoVale.github.io/Portifolio/
+
+#https://BlenoVale.github.io/Pizza/
+
+#https://BlenoVale.github.io/Urna/
