@@ -1,0 +1,201 @@
+@keyframes pisca {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+    box-shadow: 0px 0px 8px #666;
+}
+
+.tela {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.parteCima {
+    flex: 1;
+    display: flex;
+}
+
+.parteCima-esquerda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.parteCima-titulo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.parteCima-cargo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parteCima-legenda {
+    height: 50px;
+    display: flex;
+}
+
+.numero {
+    display: inline-block;
+    /*para que fique um do lado do outro*/
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.parteCima-infosCandidato {
+    flex: 1;
+    line-height: 30px;
+}
+
+.parteCima-direita {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.candidato-img img {
+    width: 100%;
+    height: 80%;
+}
+
+.candidato-img {
+    border: 2px solid #000;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.candidato-img.small {
+    width: 80%;
+    font-size: 12px;
+}
+
+.parteBaixo {
+    height: 50px;
+    font-size: 15px;
+    border-top: 2px solid #000;
+    padding: 5px;
+}
+
+.teclado {
+    background-color: #000;
+    margin-left: 30px;
+}
+
+.teclado-linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.teclado-botao {
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #666;
+}
+
+.botao-branco {
+    background-color: #FFF;
+    color: #000;
+    font-size: 15px;
+}
+
+.botao-corrige {
+    background-color: #f09046;
+    color: #000;
+    font-size: 15px;
+}
+
+.botao-confirma {
+    background-color: #48c079;
+    color: #000;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.aviso-grande {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.aviso-gigante {
+    font-size: 100px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Lembrete área*/
+.lembrete {
+    width: 300px;
+    height: 364px;
+    background-color: #48c079;
+    margin-left: 30px;
+    padding: 15px;
+}
+
+.lembrete .titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
