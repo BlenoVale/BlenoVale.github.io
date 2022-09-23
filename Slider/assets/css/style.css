@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    height: 70px;
+    background-color: #0c1d2c;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content h3 {
+    color: #FFF;
+    font-size: 30px;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+    margin-left: 20px;
+}
+
+/*Slider 01*/
+.slider {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.slider-width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.5s;
+}
+
+.slider-item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-item.slider1 {
+    background-image: url('../images/notebook.jpg');
+    
+}
+
+.slider-item.slider2 {
+    background-image: url('../images/books.jpg');
+}
+
+.slider-item.slider3 {
+    background-image: url('../images/beach.jpg');
+}
+
+.slider-controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-control {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.skin {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255,212,168,1) 1%, rgba(230,158,85,0.6617997540813201) 100%);
+    opacity: 0.4;
+}
+
+.slider-area {
+    position: absolute;
+    z-index: 98;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 1px 1px #0c1d2c;
+}
+
+/*Slider 02*/
+section {
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider02 {
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    gap: 40px;
+    /* remove o scroll x no monzila*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* remove o scroll x no chrome*/
+.slider02::-webkit-scrollbar {
+    display: none;
+}
+
+.slider02-item {
+    width: 330px;
+    height: 440px;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider02-item img{
+    width: 330px;
+    height: 340px;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.item-info .item-desc .item-name{
+    font-weight: bold;
+    
+}
+
+.item-info .item-desc .item-clhothingType{
+    color: #555;
+    
+}
+
+.item-info .item-price {
+    font-size: 20px;
+}
+
+.arrows {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows .btn-left,
+.arrows .btn-right {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background: #FFF;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrows .btn-left:hover,
+.arrows .btn-right:hover {
+    background: #eee;
+}
+
+.arrows .btn-left {
+    left: 0;
+}
+
+.arrows .btn-right {
+    right: 0;
+}
