@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Forumário</title>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="leftSide">
+            <img src="assets/images/formImage.jpg" alt="" />
+        </div>
+        <div class="rightSide">
+            <h2>Crie a sua conta</h2>
+
+            <form method="post" action="cadastro.php" class="bl-validator">
+                <label>
+                    Nome <br />
+                    <input type="text" name="nome" data-rules="required|min=2" />
+                </label>
+                <label>
+                    E-mail <br />
+                    <input type="text" name="email" data-rules="required|email"/>
+                </label>
+                <label>
+                    Senha <br />
+                    <input type="password" name="password" class="firstPswrd" data-rules="required|min=4"/>
+                </label>
+                <label>
+                    Confirmar Senha <br />
+                    <input type="password" name="password" data-rules="required|min=4|mathPswd"/>
+                </label>
+
+                <input type="submit" value="CADASTRAR" class="cadastrar"/>
+            </form>
+
+            <div class="login">
+                Já tem uma conta? <a href="">Faça o Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
