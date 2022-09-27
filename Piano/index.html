@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Piano</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Piano</h1>
+        <div class="piano">
+            <div class="blackKeys">
+                <div class="bk-order">
+                    <div data-key="keyw" class="blackKey-item key-item">W</div>
+                    <div data-key="keye" class="blackKey-item key-item">E</div>
+                </div>
+                <div class="bk-order">
+                    <div data-key="keyr" class="blackKey-item key-item">R</div>
+                    <div data-key="keyt" class="blackKey-item key-item">T</div>
+                    <div data-key="keyy" class="blackKey-item key-item">Y</div>
+                </div>
+                <div class="bk-order">
+                    <div data-key="keyu" class="blackKey-item key-item">U</div>
+                    <div data-key="keyi" class="blackKey-item key-item">I</div>
+                </div>
+            </div>
+
+            <div class="whiteKeys">
+                <div data-key="keya" class="whiteKey-item key-item">A</div>
+                <div data-key="keys" class="whiteKey-item key-item">S</div>
+                <div data-key="keyd" class="whiteKey-item key-item">D</div>
+                <div data-key="keyf" class="whiteKey-item key-item">F</div>
+                <div data-key="keyg" class="whiteKey-item key-item">G</div>
+                <div data-key="keyh" class="whiteKey-item key-item">H</div>
+                <div data-key="keyj" class="whiteKey-item key-item">J</div>
+                <div data-key="keyk" class="whiteKey-item key-item">K</div>
+                <div data-key="keyl" class="whiteKey-item key-item">L</div>
+                <div data-key="semicolon" class="whiteKey-item key-item">Ç</div>
+            </div>
+        </div>
+
+        <div class="composer">
+            <input type="text" id="input" placeholder="Faça uma composição" />
+            <button class="composer-play">Tocar</button>
+        </div>
+
+        <footer>Criado por <Strong>Bleno W. Vale</Strong></footer>
+    </div>
+
+    <div class="automatics-song">
+        <h3>CANÇÕES AUTOMÁTICAS</h3>
+        <button id="bdaySong" class="song-item">♫ Parabéns para Você</button>
+        <button id="BeethovenSong" class="song-item">♪ Beethoven</button>
+    </div>
+
+    <audio id="s_keya" src="sound/keya.mp3"></audio>
+    <audio id="s_keys" src="sound/keys.mp3"></audio>
+    <audio id="s_keyd" src="sound/keyd.mp3"></audio>
+    <audio id="s_keyf" src="sound/keyf.mp3"></audio>
+    <audio id="s_keyg" src="sound/keyg.mp3"></audio>
+    <audio id="s_keyh" src="sound/keyh.mp3"></audio>
+    <audio id="s_keyj" src="sound/keyj.mp3"></audio>
+    <audio id="s_keyk" src="sound/keyk.mp3"></audio>
+    <audio id="s_keyl" src="sound/keyl.mp3"></audio>
+    <audio id="s_semicolon" src="sound/keysemicolon.mp3"></audio>
+
+    <audio id="s_keyw" src="sound/keyw.mp3"></audio>
+    <audio id="s_keye" src="sound/keye.mp3"></audio>
+    <audio id="s_keyr" src="sound/keyr.mp3"></audio>
+    <audio id="s_keyt" src="sound/keyt.mp3"></audio>
+    <audio id="s_keyy" src="sound/keyy.mp3"></audio>
+    <audio id="s_keyu" src="sound/keyu.mp3"></audio>
+    <audio id="s_keyi" src="sound/keyi.mp3"></audio>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
