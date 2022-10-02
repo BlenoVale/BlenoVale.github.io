@@ -11,7 +11,6 @@ document.querySelector('.search-area').addEventListener('submit', async (event) 
         let results = await fetch(url);
         let json = await results.json();
 
-        console.log(json);
         if (json.cod === 200) {
             showInfo({
                 name: json.name,
