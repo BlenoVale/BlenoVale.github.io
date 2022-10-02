@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Clima</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <img src="assets/images/clouds-128.png" alt="" class="logo-img">
+                    <div class="logo-nome">Clima</div>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li><a href="https://github.com/BlenoVale" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="weather-search">
+        <div class="bkg-img">
+            <div class="bkg-skin"></div>
+        </div>
+        <div class="container">
+            <form class="search-area">
+                <input id="searchInput" type="search" name="search" placeholder="Cosnulte uma Localização"
+                    autocomplete="off" />
+                <button>Consultar</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-temperature">
+                    <div class="result-header">
+                        <span>Temperatura</span>
+                        <span class="current-date">data</span>
+                    </div>
+                    <div class="result-content">
+                        <span class="localization">Cidade - País</span>
+                        <div class="content-bellow">
+                            <span class="temperature">0°C</span>
+                            <img class="weather-symbol" src="https://openweathermap.org/img/wn/10@2x.png" />
+                        </div>
+                        <span class="weather-desc">Nublado</span>
+                        <span class="weatherMminMax">Min 0°C - Max 0°C</span>
+                    </div>
+                </div>
+                <div class="result-itens">
+                    <div class="result-header darker">Nublado</div>
+                    <div class="result-content darker">
+                        <img src="assets/images/cloudy-128.png" />
+                        <span class="cloudy">40%</span>
+                    </div>
+                </div>
+                <div class="result-itens">
+                    <div class="result-header">Pressão</div>
+                    <div class="result-content">
+                        <img src="assets/images/pressure-128.png" />
+                        <span class="pressure">40%</span>
+                    </div>
+                </div>
+                <div class="result-itens">
+                    <div class="result-header darker">Umidade</div>
+                    <div class="result-content darker">
+                        <img src="assets/images/droplet-128.png" />
+                        <span class="humidity">40%</span>
+                    </div>
+                </div>
+                <div class="result-itens">
+                    <div class="result-header last-one">Ventos</div>
+                    <div class="result-content last-one">
+                        <div class="wind-direction">
+                            <div class="wind-pointer" style="transform: rotate(0deg)"></div>
+                        </div>
+                        <span class="wind-speed">8.8km/h</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aviso"><span></span></div>
+        </div>
+    </section>
+
+    <footer>Criado por <strong>Bleno W. Vale</strong> - 2022</footer>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
