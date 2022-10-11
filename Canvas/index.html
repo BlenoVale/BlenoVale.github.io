@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quadro de Desenho</title>
+</head>
+
+<body>
+    <header>
+        <h1>Canvas</h1>
+        <a href="https://github.com/BlenoVale" target="_blank">GitHub</a>
+    </header>
+
+    <main>
+        <div id="canvas-area">
+            <canvas id="board"></canvas>
+        </div>
+
+        <div class="pseudo-footer">Criado por <strong>Bleno W. Vale</strong> - 2022</div>
+    </main>
+
+    <aside id="options">
+        <span>Tools</span>
+        <div class="tools">
+            <div data-tool="pencil" class="tool selected" title="Pencil"><i class="fa-solid fa-pencil fa-xl"></i></div>
+            <div data-tool="bucket" class="tool" title="Bucket"><i class="fa-solid fa-fill-drip fa-xl"></i></div>
+            <div data-tool="eraser" class="tool" title="Eraser"><i class="fa-solid fa-eraser fa-xl"></i></div>
+            <div data-tool="clean" class="tool clean" title="Clean all"><i class="fa-regular fa-file fa-xl"></i></div>
+        </div>
+
+        <span>Colors</span>
+        <div class="colors">
+            <div data-color="black" style="background-color: black" class="color active"></div>
+            <div data-color="white" style="background-color: white" class="color"></div>
+            <div data-color="red" style="background-color: red" class="color"></div>
+            <div data-color="green" style="background-color: green" class="color"></div>
+            <div data-color="blue" style="background-color: blue" class="color"></div>
+            <div data-color="yellow" style="background-color: yellow" class="color"></div>
+            <div data-color="purple" style="background-color: purple" class="color"></div>
+            <div data-color="orange" style="background-color: orange" class="color"></div>
+            <div data-color="aqua" style="background-color: aqua" class="color"></div>
+            <div data-color="lawngreen" style="background-color: lawngreen" class="color"></div>
+            <div data-color="brown" style="background-color: brown" class="color"></div>
+            <div data-color="gray" style="background-color: gray" class="color"></div>
+        </div>
+
+        <button id="download">Download Canvas</button>
+    </aside>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/html2canvas.js"></script>
+</body>
+
+</html>

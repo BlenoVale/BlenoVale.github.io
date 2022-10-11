@@ -1,0 +1,157 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body {
+     display: grid;
+     grid-template-columns: calc(100vw - 250px) 250px;
+     grid-template-rows: 76px calc(100vh - 76px);
+ }
+
+ header {
+     grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row-start: 1;
+     grid-row-end: 2;
+
+     background-color: #183153;
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ header h1 {
+     font-size: 50px;
+     color: #fff;
+     margin-left: 40px;
+ }
+
+ header a {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 40px;
+    text-decoration: none;
+ }
+
+ header a:hover {
+    color: #bbb;
+    text-decoration: underline;
+ }
+
+
+ main {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 3;
+
+     background-color: #eee;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ #canvas-area {
+     width: 95%;
+     height: 90%;
+     background-color: #fff;
+     box-shadow: 0px 0px 5px #ccc;
+ }
+
+ #board {
+    width: 100%;
+    height: 100%;
+ }
+
+ .pseudo-footer {
+    font-size: 13px;
+    margin-top: 15px;
+ }
+
+ aside {
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 3;
+
+     background-color: #fbfbfb;
+     border-left: 1px solid #ebebeb;
+ }
+
+ #options {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 40px 10px;
+ }
+
+ span {
+     margin-top: 20px;
+ }
+
+ .tools {
+     display: flex;
+     gap: 20px;
+     margin: 15px 10px;
+ }
+
+ .tool {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 35px;
+     height: 35px;
+ }
+
+ .tool:hover {
+     background-color: #eee;
+     border: 2px solid #06a3da;
+ }
+
+ .selected {
+     background-color: #eee;
+     border: 2px solid #06a3da;
+ }
+
+ .colors {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     margin: 15px 10px;
+ }
+
+ .color {
+     width: 35px;
+     height: 35px;
+     border: 1px solid #2d303d;
+ }
+
+ .color:hover {
+     opacity: 0.8;
+     border: 3px solid #06a3da;
+ }
+
+ .active {
+     opacity: 0.9;
+     border: 4px solid #06a3da;
+ }
+
+ button {
+    margin-top: 30px;
+    padding: 10px 10px;
+    background-color: #183153;
+    color: #fff;
+ }
+
+ button:hover {
+    background-color: #1f467c;
+ }
