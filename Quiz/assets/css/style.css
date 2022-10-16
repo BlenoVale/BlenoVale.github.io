@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(87, 112, 236, 1) 0%, rgba(49, 148, 244, 1) 100%);
+}
+
+.progress {
+    display: none;
+    height: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, rgba(235, 110, 159, 1) 0%, rgb(250, 128, 88) 100%);
+    height: 100%;
+    transition: all ease .5s;
+}
+
+.progress-count {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0px 0px 1px #ccc;
+    opacity: 0.8;
+    margin: 15px;
+}
+
+.quiz-area {
+    max-width: 600px;
+    max-height: 600px;
+
+    display: flex;
+    overflow: hidden;
+}
+
+.quiz-width {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.7s;
+}
+
+.quiz-item {
+    max-width: 600px;
+    min-width: 600px;
+}
+
+/*PRESENTATION AREA*/
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.presentation img {
+    width: auto;
+    height: 210px;
+    padding-top: 10px;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate;
+}
+
+.presentation .presentation-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation .presentation-title {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+
+.presentation .presentation-desc {
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.quiz-item button {
+    padding: 10px 70px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: #edc62a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #2e4693;
+    cursor: pointer;
+}
+
+.quiz-item button:hover {
+    background: #f0ce47;
+}
+
+/*QUESTION AREA*/
+.question-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.question-area .question {
+    display: flex;
+    align-items: center;
+    height: 76px;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.question-area .option {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    background-color: #fff;
+    margin: 8px 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.question-area .option span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #487ff0;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.question-area .option.selected,
+.question-area .option:hover {
+    background-color: #bad1ff;
+}
+
+.question-button-area {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.question-button-area .warning-msg {
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    color: #edc62a;
+    text-shadow: 0px 1px 4px #2e4693;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/*Score Area*/
+.score-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-content {
+    background-color: #bad1ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 1px #bad1ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: #000;
+    gap: 7px;
+}
+
+.score-content img {
+    width: auto;
+    height: 200px;
+    padding-top: 10px;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate;
+}
+
+.score-area .scoreText1 {
+    font-size: 20px;
+}
+
+.score-area .scorePct {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e4693;
+}
+
+.score-area .scoreText2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*blink timer*/
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes blinker {
+    50% {
+        border: 3px solid #ff9a93;
+        color: #ff9a93;
+    }
+}
+
+/*responsive*/
+@media (max-width: 600px){
+    .quiz-item {
+        max-width: 100%;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentation img {
+        height: 180px;
+
+    }
+
+    .presentation .presentation-text {
+        flex: 1;
+        font-size: 18px;
+    }
+    
+    .presentation .presentation-title {
+        font-size: 20px;
+    }
+    
+    
+    .presentation .presentation-desc {
+        font-size: 13px;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    /*Quesstio Area*/
+
+    .question-area {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 19px;
+    }
+    
+    .question-area .question {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .question-area .option {
+        background-color: #fff;
+        margin: 8px 0;
+        font-size: 15px;
+    }
+        
+    .question-button-area button {
+        font-size: 15px;
+        width: 150px;
+        padding: 15px;
+    }
+    
+    .question-button-area .warning-msg {
+        font-size: 15px;
+        text-align: right;
+    }
+
+    /*Score Area*/
+.score-content {
+    gap: 4px;
+}
+
+.score-content img {
+    height: 140px;
+}
+
+.score-area .scoreText1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.score-area .scorePct {
+    font-size: 26px;
+}
+
+.score-area .scoreText2 {
+    padding: 0 40px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+} 
+
+.score-content button {
+    font-size: 20px;
+    padding: 10px 35px;
+}
+}
