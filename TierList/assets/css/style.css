@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2a323d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1a2029;
+    border-left: 1px solid #2a323d;
+}
+
+body {
+    background-color: #0d1117;
+    color: #fff;
+
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 25px;
+}
+
+/*Tier List Area*/
+.tierList-area {
+    flex: 1;
+    width: 76%;
+    height: 604px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
+}
+
+.tierList-container {
+    flex: 1;
+    min-width:100%;
+    height: 100%;
+    background-color: #0d1117;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.tierList-container .ray {
+    min-height: 100px;
+    display: flex;
+    gap: 6px;
+}
+
+.tierList-ranking {
+    flex: 1;
+    max-width: 100px;
+    min-height: inherit;
+    
+    height: auto;
+    color: #0d1117;
+    border: 1px solid #2a323d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tierList-drop-Area {
+    flex: 1;
+    min-height: inherit;
+
+    background-color: #1a2029;
+    border: 1px solid #2a323d;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 8px;
+}
+
+.drag-area {
+    min-width: 100%;
+    height: 100%;
+    background-color: #1a2029;
+    border: 1px solid #2a323d;
+    display: flex;
+    flex-direction: column;
+}
+
+.drag-space {
+    flex: 1;
+    min-height: 100px;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.drag-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.drag-item {
+    cursor: grab;
+    max-width: 95px;
+    max-height: 95px;
+}
+
+.drag-item img {
+    max-width: 95px;
+    max-height: 95px;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.hover {
+    background-color: #262d36;
+}
+
+.options {
+    min-width: inherit;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    margin-top: 20px;
+
+}
+
+.options button {
+    padding: 8px;
+    color: #f0f1f3;
+    background-color: #1a2029;
+    border: 1px solid #f0f1f3;
+}
+
+.options button:hover {
+    background-color: #2a323d;
+}
+
+#canvas {
+    display: none;
+}
+
+footer {
+    height: 30px;
+}
+
+/*GitHub Area*/
+.gitHub {
+    position: fixed;
+    right: -25px;
+    bottom: -25px;
+    width: 150px;
+    height: 150px;
+    background-color: #0d1117;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    gap: 5px;
+}
+
+.gitHub a {
+    font-size: 15px;
+    color: #f0f1f3;
+    text-decoration: none;
+}
+
+.gitHub:hover {
+    background-color: #1a2029;
+}
+
+.gitHub a:hover {
+    text-decoration: underline;
+}

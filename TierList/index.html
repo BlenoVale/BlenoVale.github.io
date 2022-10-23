@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Tier List</title>
+</head>
+
+<body>
+    <header>
+        <h3>Tier List</h3>
+    </header>
+
+    <section class="tierList-area">
+        <div id="tlc" class="tierList-container">
+            <div class="ray">
+                <div class="tierList-ranking" style="background-color: #ff7f7f">A</div>
+                <div class="tierList-drop-Area"></div>
+            </div>
+            <div class="ray">
+                <div class="tierList-ranking" style="background-color: #ffbf7f">B</div>
+                <div class="tierList-drop-Area"></div>
+            </div>
+            <div class="ray">
+                <div class="tierList-ranking" style="background-color: #ffff7f">C</div>
+                <div class="tierList-drop-Area"></div>
+            </div>
+            <div class="ray">
+                <div class="tierList-ranking" style="background-color: #7fff7f">D</div>
+                <div class="tierList-drop-Area"></div>
+            </div>
+            <div class="ray">
+                <div class="tierList-ranking" style="background-color: #7fbfff">E</div>
+                <div class="tierList-drop-Area"></div>
+            </div>
+        </div>
+
+        <div class="drag-area">
+            <div class="drag-space">
+                <div class="drag-itens">
+                    <div class="drag-item" draggable="true"><img src="assets/images/Pikachu.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Bulbasaur-PNG.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Charmander-PNG.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Squirtle-PNG.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/chicorita.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/cyndaquil.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/totodile.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Treecko.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Torchic.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Mudkip.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Turtwig.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Chimchar.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Piplup.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Snivy.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Tepig.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Oshawott.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Chespin.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Fennekin.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Froakie.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Rowlet.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Litten.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Popplio.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Grookey.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Scorbunny.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Sobble.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Sprigatito.webp" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Fuecoco.png" /></div>
+                    <div class="drag-item" draggable="true"><img src="assets/images/Quaxly.png" /></div>
+                </div>
+            </div>
+            <div class="options">
+                <button id="restart">Reiniciar</button>
+                <button id="btn-imgUpload">Carregar Imagem</button>
+                <input type="file" id="imgUpload" accept="image/png, image/jpg, image/webp" style="display: none" />
+                <button id="cleanAll">Apagar Tudo</button>
+                <button id="saveList" >Salvar Lista</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gitHub">
+        <i class="fa-brands fa-github-alt fa-2x" style="color: #f0f1f3"></i>
+        <a href="https://github.com/BlenoVale" target="_blank">Meu GitHub</a>
+    </section>
+
+    <footer>Criado por: <strong> Bleno W. Vale </strong> - 2022</footer>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="assets/js/options.js"></script>
+    <script src="assets/js/dragdrop.js"></script>
+</body>
+
+</html>
