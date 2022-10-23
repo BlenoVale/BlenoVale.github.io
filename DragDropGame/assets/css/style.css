@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f1f3;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.game-area {
+    flex: 1;
+    display: flex;
+    /*background-color: #ddd;*/
+    width: 800px;
+    overflow: hidden;
+}
+
+.levels-width {
+    display: flex;
+    align-items: center;
+    transition: all ease 0.7s;
+}
+
+.level-area {
+    max-width: 800px;
+    min-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drag-itens {
+    min-width: 500px;
+    min-height: 155px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    cursor: grab;
+}
+
+.drag-item.dragging {
+    opacity: 0.5;
+}
+
+.level2 .drag-itens {
+    margin: 0 140px;
+    margin-bottom: 30px;
+}
+
+.level3 .drag-itens {
+    margin: 0 35px;
+    margin-bottom: 30px;
+}
+
+
+.drag-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drop-spaces {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-content {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.drop-item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed #000;
+    background-color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover {
+    background-color: rgba(58, 58, 58, 0.3);
+    font-size: 23px;
+    border: 5px dashed #000;
+    transition: all ease 0.3s;
+}
+
+/*End-Game Area*/
+
+.end-game-box {
+    position: relative;
+
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 7px #bbb;
+    border-radius: 10px;
+}
+
+.end-game-box-up {
+    position: absolute;
+    top: 0;
+
+    width: inherit;
+    height: 150px;
+    background: linear-gradient(90deg, rgba(57, 40, 176, 1) 0%, rgba(176, 98, 208, 1) 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.end-game-box img {
+    position: absolute;
+    top: 40px;
+
+    width: auto;
+    height: 200px;
+}
+
+.end-game-box-down {
+    position: absolute;
+    bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-game-box-down h3 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #7444bf;
+}
+
+.end-game-box-down span {
+    font-size: 15px;
+    color: #5d564a;
+}
+
+.end-game-box-down button {
+    background-color: #f0c500;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 7px #bbb;
+}
+
+.end-game-box-down button:hover {
+    background-color: #edb500;
+    box-shadow: none;
+}
+
+/*GitHub Area*/
+.gitHub{
+    position: fixed;
+    right: -25px;
+    bottom: -25px;
+    width: 150px;
+    height: 150px;
+    background-color: #0d1117;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-right: 10px;
+    gap: 5px;
+}
+
+.gitHub a {
+    color: #f0f1f3;
+    text-decoration: none;
+}
+
+.gitHub:hover{
+    background-color: #1a2029;
+}
+
+.gitHub a:hover {
+    text-decoration: underline;
+}
+
+/*Footer Area*/
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer strong{
+    margin: 0 5px;
+}
